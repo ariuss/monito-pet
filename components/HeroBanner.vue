@@ -1,6 +1,13 @@
 <template>
   <div class="hero-section">
-    <Header></Header>
+    <div class="hero-background-container">
+      <div class="hero-background-effect-primary"></div>
+      <div class="hero-background-effect-secondary"></div>
+      <div class="hero-background-effect-tertiary"></div>
+    </div>
+    <div class="hero-header">
+      <Header></Header>
+    </div>
     <div class="hero-content">
       <h1 class="hero-title">One more friend</h1>
       <h2 class="hero-subtitle">Thousands more fun!</h2>
@@ -37,9 +44,83 @@
   }
 }
 
+.hero-background-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.hero-background-effect-primary {
+  position: absolute;
+  width: 635px;
+  height: 635px;
+  border-radius: 61px;
+  top: -640px;
+  left: -260px;
+  transform: rotate(-70deg);
+  background-color: #F7DBA7;
+}
+
+@media screen and (min-width: 415px) {
+  .hero-background-effect-primary {
+    top: -600px;
+    left: -375px;
+    transform: rotate(-70deg);
+  }
+}
+
+.hero-background-effect-secondary {
+  position: absolute;
+  width: 528.98px;
+  height: 528.98px;
+  top: 475px;
+  left: 65px;
+  border-radius: 48px;
+  transform: rotate(8deg);
+  background-color: #003459;
+}
+
+@media screen and (min-width: 415px) {
+  .hero-background-effect-secondary {
+    top: 285px;
+    left: 608px;
+    transform: rotate(12deg);
+  }
+}
+
+.hero-background-effect-tertiary {
+  position: absolute;
+  width: 528.98px;
+  height: 528.98px;
+  border-radius: 48px;
+  top: 450px;
+  left: 110px;
+  transform: rotate(24deg);
+  background-color: #F7DBA7;
+}
+
+@media screen and (min-width: 415px) {
+  .hero-background-effect-tertiary {
+    top: 250px;
+    left: 640px;
+    transform: rotate(25deg);
+  }
+}
+
+.hero-header {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-content {
   margin-top: 1.5rem;
   padding: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (min-width: 415px) {

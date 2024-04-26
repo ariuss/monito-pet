@@ -1,20 +1,26 @@
 <template>
   <div class="banner-section">
     <div class="banner">
-      <h1 class="banner-title">Adoption <img src="~/assets/img/paw.svg" alt="" style="height: 0.75em;"></h1>
-      <h2 class="banner-subtitle">We need help. so do they.</h2>
-      <p class="banner-description">
-        Adopt a pet and give it a home, <br>
-        it will be love you back unconditionally.
-      </p>
-      <div class="banner-cta">
-        <button type="button" class="banner-button-primary">
-          View intro
-          <FontAwesome icon="fa-regular fa-circle-play"></FontAwesome>
-        </button>
-        <button type="button" class="banner-button-secondary">
-          Explore now
-        </button>
+      <div class="banner-background-container">
+        <div class="banner-background-effect-primary"></div>
+        <div class="banner-background-effect-secondary"></div>
+      </div>
+      <div class="banner-content">
+        <h1 class="banner-title">Adoption <img src="~/assets/img/paw.svg" alt="" style="height: 0.75em;"></h1>
+        <h2 class="banner-subtitle">We need help. so do they.</h2>
+        <p class="banner-description">
+          Adopt a pet and give it a home, <br>
+          it will be love you back unconditionally.
+        </p>
+        <div class="banner-cta">
+          <button type="button" class="banner-button-primary">
+            View intro
+            <FontAwesome icon="fa-regular fa-circle-play"></FontAwesome>
+          </button>
+          <button type="button" class="banner-button-secondary">
+            Explore now
+          </button>
+        </div>
       </div>
       <div class="banner-image-container">
         <img class="banner-image" src="~/assets/img/paw-holding.png" alt="">
@@ -31,9 +37,48 @@
 .banner {
   padding: 3rem 4rem;
   border-radius: 20px;
-  background-color: #FCEED5;
+  background-color: #FFB775;
   position: relative;
   overflow: hidden;
+}
+
+.banner-background-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.banner-background-effect-primary {
+  position: absolute;
+  width: 782.29px;
+  height: 635px;
+  border-radius: 99px;
+  top: -240px;
+  left: -180px;
+  transform: rotate(155deg);
+  background-color: #FCEED5;
+}
+
+.banner-background-effect-secondary {
+  position: absolute;
+  width: 787.54px;
+  height: 787.54px;
+  border-radius: 99px;
+  opacity: 0.3;
+  top: 150px;
+  left: 625px;
+  transform: rotate(-120deg);
+  background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
 }
 
 .banner-title {

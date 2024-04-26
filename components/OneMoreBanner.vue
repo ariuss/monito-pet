@@ -1,6 +1,10 @@
 <template>
   <div class="banner-section">
     <div class="banner">
+      <div class="banner-background-container">
+        <div class="banner-background-effect-primary"></div>
+        <div class="banner-background-effect-secondary"></div>
+      </div>
       <div class="banner-content">
         <h1 class="banner-title">One more friend</h1>
         <h2 class="banner-subtitle">Thousands more fun!</h2>
@@ -35,7 +39,7 @@
   position: relative;
   padding: 1rem;
   border-radius: 20px;
-  background-color: #FCEED5;
+  background-color: #003459;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -49,6 +53,59 @@
     gap: 2rem;
     padding: 4rem;
   }
+}
+
+.banner-background-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.banner-background-effect-primary {
+  position: absolute;
+  width: 605.03px;
+  height: 635px;
+  border-radius: 75px;
+  top: -325px;
+  left: -150px;
+  transform: rotate(11.59deg);
+  background-color: #FCEED5;
+}
+
+@media screen and (min-width: 415px) {
+  .banner-background-effect-primary {
+    top: -200px;
+    left: unset;
+    right: -130px;
+    transform: rotate(40deg);
+  }
+}
+
+.banner-background-effect-secondary {
+  position: absolute;
+  width: 787.54px;
+  height: 787.54px;
+  border-radius: 99px;
+  top: 500px;
+  left: -225px;
+  transform: rotate(-59.25deg);
+  background-color: #002A48;
+}
+
+@media screen and (min-width: 415px) {
+  .banner-background-effect-secondary {
+    top: 175px;
+    left: -150px;
+    transform: rotate(-60deg);
+  }
+}
+
+.banner-content {
+  z-index: 1;
 }
 
 .banner-title {
