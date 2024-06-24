@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "monito-pet",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "normalize.css": "8.0.1",
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "nuxt": "3.12.2",
+    "vue": "3.4.30",
+    "vue-router": "4.4.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "6.5.2",
