@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img class="card-image" :src="'/_nuxt/assets/img/' + image" alt="">
+    <img class="card-image" :src="'/assets/img/' + image" alt="">
     <div class="card-content">
       <div class="pet-name">{{ name }}</div>
       <div class="pet-gene">Gene: <span class="pet-gene-value">{{ gene }}</span></div>

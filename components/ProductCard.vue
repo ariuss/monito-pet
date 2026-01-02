@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img class="card-image" :src="'/_nuxt/assets/img/' + image" alt="">
+    <img class="card-image" :src="'/assets/img/' + image" alt="">
     <div class="card-content">
       <div class="product-name">{{ name }}</div>
       <div class="product-spec">
@@ -10,7 +10,7 @@
       </div>
       <div class="product-price">{{ price }}</div>
       <div class="product-bonus">
-        <img src="~/assets/img/bonus-box.svg" alt="">
+        <img src="/assets/img/bonus-box.svg" alt="">
         <span class="product-separator">&#183;</span>
         {{ bonus }}
       </div>
@@ -38,6 +38,7 @@
   padding: 4px;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   gap: 0.25rem;
 }
 
@@ -47,6 +48,9 @@
   font-weight: 700;
   line-height: 24px;
   color: #00171F;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .product-type,

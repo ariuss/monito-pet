@@ -5,8 +5,14 @@
       Take a look at some of our pets
     </h1>
     <div class="whatsnew-cards">
-      <PetCard v-for="pet in pets" :image="pet.image" :name="pet.name" :gene="pet.gene" :age="pet.age"
-        :price="pet.price"></PetCard>
+      <PetCard
+        v-for="pet in pets"
+        :image="`${pet.image}`"
+        :name="pet.name"
+        :gene="pet.gene"
+        :age="pet.age"
+        :price="pet.price"
+      />
     </div>
     <div class="whatsnew-more-container">
       <a class="whatsnew-more" href="">
@@ -115,7 +121,7 @@
 
 @media screen and (min-width: 415px) {
   .whatsnew-more {
-    width: 150px;
+    width: max-content;
     height: 44px;
     padding: 12px 28px 12px 28px;
     margin: 0;

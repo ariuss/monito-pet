@@ -13,13 +13,13 @@
       </div>
     </div>
     <div class="seller-section-body">
-      <img class="seller-logo" src="~/assets/img/seller-1.png" alt="">
-      <img class="seller-logo" src="~/assets/img/seller-2.png" alt="">
-      <img class="seller-logo" src="~/assets/img/seller-3.png" alt="">
-      <img class="seller-logo" src="~/assets/img/seller-4.png" alt="">
-      <img class="seller-logo" src="~/assets/img/seller-5.png" alt="">
-      <img class="seller-logo" src="~/assets/img/seller-6.png" alt="">
-      <img class="seller-logo" src="~/assets/img/seller-7.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-1.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-2.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-3.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-4.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-5.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-6.png" alt="">
+      <img class="seller-logo" src="/assets/img/seller-7.png" alt="">
     </div>
   </div>
 </template>
@@ -73,7 +73,7 @@
   color: #003459;
   padding: 12px 28px 12px 28px;
   border-radius: 57px;
-  width: 225px;
+  width: max-content;
   height: 44px;
   margin: 0;
 }
@@ -88,6 +88,6 @@
 
 .seller-logo {
   flex-shrink: 1;
-  width: 100%;
+  width: 100px;
 }
 </style>

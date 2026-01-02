@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="hero-image-container">
-      <img class="hero-image" src="~/assets/img/hero-image.png" alt="">
+      <img class="hero-image" src="/assets/img/hero-image.png" alt="">
     </div>
   </div>
 </template>
@@ -176,7 +176,7 @@
 
 .hero-button-primary {
   height: 48px;
-  padding: 14px 28px 10px 28px;
+  padding: 10px 28px 10px 28px;
   border: solid #003459 1.5px;
   border-radius: 57px;
   text-transform: capitalize;
@@ -195,7 +195,7 @@
 
 .hero-button-secondary {
   height: 48px;
-  padding: 14px 28px 10px 28px;
+  padding: 10px 28px 10px 28px;
   border-radius: 57px;
   text-transform: capitalize;
   background-color: #003459;

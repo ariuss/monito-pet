@@ -4,7 +4,7 @@
       <FontAwesome icon="fa-solid fa-bars fa-xl"></FontAwesome>
     </button>
     <a href="/">
-      <img class="header-logo" src="~/assets/img/monito-logo.svg" alt="Monito">
+      <img class="header-logo" src="/assets/img/monito-logo.svg" alt="Monito">
     </a>
     <div class="header-collapse">
       <nav class="header-nav">
@@ -22,7 +22,7 @@
       </div>
       <a class="header-registration" href="">Join the community</a>
       <button class="header-price-toggle" type="button">
-        <img src="~/assets/img/vietnam-flag.png" alt="" width="21px" height="21px">
+        <img src="/assets/img/vietnam-flag.png" alt="" width="21px" height="21px">
         <span>VND</span>
         <FontAwesome icon="fa-solid fa-chevron-down fa-sm" style="font-size: 16px;"></FontAwesome>
       </button>
@@ -147,7 +147,7 @@
     text-decoration: none;
     width: 203px;
     height: 44px;
-    padding: 14px 28px 10px 28px;
+    padding: 10px 28px 10px 28px;
     border-radius: 57px;
     background-color: #003459;
     font-family: SVN-Gilroy;
@@ -167,7 +167,7 @@
     border: none;
     width: 104px;
     height: 44px;
-    padding: 10px 8px 8px 8px;
+    padding: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;

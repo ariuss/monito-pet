@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="banner-image-container">
-        <img class="banner-image" src="~/assets/img/banner-image.png" alt="">
+        <img class="banner-image" src="/assets/img/banner-image.png" alt="">
       </div>
     </div>
   </div>
@@ -176,7 +176,7 @@
 
 .banner-button-primary {
   height: 48px;
-  padding: 14px 28px 10px 28px;
+  padding: 10px 28px 10px 28px;
   border: solid #003459 1.5px;
   border-radius: 57px;
   text-transform: capitalize;
@@ -195,7 +195,7 @@
 
 .banner-button-secondary {
   height: 48px;
-  padding: 14px 28px 10px 28px;
+  padding: 10px 28px 10px 28px;
   border-radius: 57px;
   text-transform: capitalize;
   background-color: #003459;

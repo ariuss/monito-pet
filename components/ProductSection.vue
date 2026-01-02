@@ -15,8 +15,15 @@
     </div>
     <div class="product-section-body">
       <div class="product-cards">
-        <ProductCard v-for="product in products" :image="product.image" :name="product.name" :type="product.type"
-          :size="product.size" :price="product.price" :bonus="product.bonus"></ProductCard>
+        <ProductCard
+          v-for="product in products"
+          :image="product.image"
+          :name="product.name"
+          :type="product.type"
+          :size="product.size"
+          :price="product.price"
+          :bonus="product.bonus"
+        />
       </div>
     </div>
   </div>
@@ -71,7 +78,7 @@
   color: #003459;
   padding: 12px 28px 12px 28px;
   border-radius: 57px;
-  width: 225px;
+  width: max-content;
   height: 44px;
   margin: 0;
 }
@@ -81,6 +88,10 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.product-cards > * {
+  min-width: 0;
 }
 </style>
 
@@ -139,7 +150,7 @@ export default {
         },
         {
           image: "product-7.png",
-          name: "Costumes Chicken Drumsti ck Headband",
+          name: "Costumes Chicken Drumstick Headband",
           type: "Costume",
           size: "",
           price: "400.000 VND",

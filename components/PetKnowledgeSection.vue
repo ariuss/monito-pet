@@ -116,12 +116,12 @@
   font-weight: 500;
   line-height: 24px;
   color: #003459;
-  width: 100%;
+  width: max-content;
 }
 
 @media screen and (min-width: 415px) {
   .petknowledge-more {
-    width: 150px;
+    width: max-content;
     height: 44px;
     padding: 12px 28px 12px 28px;
     margin: 0;

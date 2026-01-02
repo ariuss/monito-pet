@@ -6,7 +6,7 @@
         <div class="banner-background-effect-secondary"></div>
       </div>
       <div class="banner-content">
-        <h1 class="banner-title">Adoption <img src="~/assets/img/paw.svg" alt="" style="height: 0.75em;"></h1>
+        <h1 class="banner-title">Adoption <img src="/assets/img/paw.svg" alt="" style="height: 0.75em;"></h1>
         <h2 class="banner-subtitle">We need help. so do they.</h2>
         <p class="banner-description">
           Adopt a pet and give it a home, <br>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="banner-image-container">
-        <img class="banner-image" src="~/assets/img/paw-holding.png" alt="">
+        <img class="banner-image" src="/assets/img/paw-holding.png" alt="">
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@
 
 .banner-button-primary {
   height: 48px;
-  padding: 14px 28px 10px 28px;
+  padding: 10px 28px 10px 28px;
   border: solid #003459 1.5px;
   border-radius: 57px;
   text-transform: capitalize;
@@ -139,7 +139,7 @@
 
 .banner-button-secondary {
   height: 48px;
-  padding: 14px 28px 10px 28px;
+  padding: 10px 28px 10px 28px;
   border-radius: 57px;
   text-transform: capitalize;
   background-color: #003459;

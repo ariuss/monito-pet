@@ -34,7 +34,7 @@
     <hr class="footer-separator">
     <div class="footer-section-bottom">
       <div class="footer-logo-container">
-        <img src="~/assets/img/footer-logo.svg" alt="Monito logo" class="footer-logo">
+        <img src="/assets/img/footer-logo.svg" alt="Monito logo" class="footer-logo">
       </div>
       <nav class="footer-link-container">
         <a class="footer-link" href="">Terms of Service</a>
@@ -140,7 +140,6 @@
   font-family: SVN-Gilroy;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
   text-align: center;
   color: #FDFDFD;
 }
